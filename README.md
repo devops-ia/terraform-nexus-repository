@@ -1,6 +1,6 @@
 # Nexus Repository
 
-This module allows you to create **Nexus Repository as a global resource** and **individual Nexus Repository resources.** For individual examples, see the usage snippets and [examples](https://github.com/terraform-nexus-modules/terraform-nexus-repository/tree/main/examples).
+This module allows you to create **Nexus Repository as a global resource** and **individual Nexus Repository resources.** For individual examples, see the usage snippets and [examples](https://github.com/devops-ia/terraform-nexus-repository/tree/main/examples).
 
 ## Provider
 You need use a [Nexus provider](https://registry.terraform.io/providers/datadrivers/nexus/latest/docs).
@@ -19,8 +19,7 @@ provider "nexus" {
 
 ```hcl
 module "nexus_repository" {
-  source  = "terraform-nexus-modules/repository/nexus"
-  version = "1.0.0"
+  source  = "devops-ia/repository/nexus"
 
   nexus_repository_apt_hosted = [
     {
@@ -860,8 +859,7 @@ module "nexus_repository" {
 
 ```hcl
 module "nexus_repository_apt_hosted" {
-  source  = "terraform-nexus-modules/repository/nexus//modules/nexus-repository-apt-hosted"
-  version = "1.0.0"
+  source  = "devops-ia/repository/nexus//modules/nexus-repository-apt-hosted"
   
   name   = "apt-hosted"
   online = true
@@ -893,8 +891,7 @@ module "nexus_repository_apt_hosted" {
 
 ```hcl
 module "nexus_repository_apt_proxy" {
-  source  = "terraform-nexus-modules/repository/nexus//modules/nexus-repository-apt-proxy"
-  version = "1.0.0"
+  source  = "devops-ia/repository/nexus//modules/nexus-repository-apt-proxy"
   
   name   = "apt-proxy"
   online = true
@@ -949,8 +946,7 @@ module "nexus_repository_apt_proxy" {
 
 ```hcl
 module "nexus_repository_bower_group" {
-  source  = "terraform-nexus-modules/repository/nexus//modules/nexus-repository-bower-group"
-  version = "1.0.0"
+  source  = "devops-ia/repository/nexus//modules/nexus-repository-bower-group"
   
   name   = "bower-group"
   online = true
@@ -973,8 +969,7 @@ module "nexus_repository_bower_group" {
 
 ```hcl
 module "nexus_repository_bower_hosted" {
-  source  = "terraform-nexus-modules/repository/nexus//modules/nexus-repository-bower-hosted"
-  version = "1.0.0"
+  source  = "devops-ia/repository/nexus//modules/nexus-repository-bower-hosted"
   
   name   = "bower-hosted"
   online = true
@@ -999,8 +994,7 @@ module "nexus_repository_bower_hosted" {
 
 ```hcl
 module "nexus_repository_bower_proxy" {
-  source  = "terraform-nexus-modules/repository/nexus//modules/nexus-repository-bower-proxy"
-  version = "1.0.0"
+  source  = "devops-ia/repository/nexus//modules/nexus-repository-bower-proxy"
   
   name   = "bower-proxy"
   online = true
@@ -1034,8 +1028,7 @@ module "nexus_repository_bower_proxy" {
 
 ```hcl
 module "nexus_repository_cocoapods_proxy" {
-  source  = "terraform-nexus-modules/repository/nexus//modules/nexus-repository-cocoapods-proxy"
-  version = "1.0.0"
+  source  = "devops-ia/repository/nexus//modules/nexus-repository-cocoapods-proxy"
   
   name   = "cocoapods-proxy"
   online = true
@@ -1067,8 +1060,7 @@ module "nexus_repository_cocoapods_proxy" {
 
 ```hcl
 module "nexus_repository_conan_proxy" {
-  source  = "terraform-nexus-modules/repository/nexus//modules/nexus-repository-conan-proxy"
-  version = "1.0.0"
+  source  = "devops-ia/repository/nexus//modules/nexus-repository-conan-proxy"
   
   name   = "conan-proxy"
   online = true
@@ -1100,8 +1092,7 @@ module "nexus_repository_conan_proxy" {
 
 ```hcl
 module "nexus_repository_conda_proxy" {
-  source  = "terraform-nexus-modules/repository/nexus//modules/nexus-repository-conda-proxy"
-  version = "1.0.0"
+  source  = "devops-ia/repository/nexus//modules/nexus-repository-conda-proxy"
   
   name   = "conda-proxy"
   online = true
@@ -1133,8 +1124,7 @@ module "nexus_repository_conda_proxy" {
 
 ```hcl
 module "nexus_repository_docker_group" {
-  source  = "terraform-nexus-modules/repository/nexus//modules/nexus-repository-docker-group"
-  version = "1.0.0"
+  source  = "devops-ia/repository/nexus//modules/nexus-repository-docker-group"
   
   name   = "docker-group"
   online = true
@@ -1166,8 +1156,7 @@ module "nexus_repository_docker_group" {
 
 ```hcl
 module "nexus_repository_docker_hosted" {
-  source  = "terraform-nexus-modules/repository/nexus//modules/nexus-repository-docker-hosted"
-  version = "1.0.0"
+  source  = "devops-ia/repository/nexus//modules/nexus-repository-docker-hosted"
   
   name   = "docker-hosted"
   online = true
@@ -1190,8 +1179,7 @@ module "nexus_repository_docker_hosted" {
 
 ```hcl
 module "nexus_repository_docker_proxy" {
-  source  = "terraform-nexus-modules/repository/nexus//modules/nexus-repository-docker-proxy"
-  version = "1.0.0"
+  source  = "devops-ia/repository/nexus//modules/nexus-repository-docker-proxy"
   
   name   = "docker-proxy"
   online = true
@@ -1233,8 +1221,7 @@ module "nexus_repository_docker_proxy" {
 
 ```hcl
 module "nexus_repository_gitlfs_hosted" {
-  source  = "terraform-nexus-modules/repository/nexus//modules/nexus-repository-gitlfs-hosted"
-  version = "1.0.0"
+  source  = "devops-ia/repository/nexus//modules/nexus-repository-gitlfs-hosted"
   
   name   = "gitlfs-internal"
   online = true
@@ -1251,8 +1238,7 @@ module "nexus_repository_gitlfs_hosted" {
 
 ```hcl
 module "nexus_repository_go_group" {
-  source  = "terraform-nexus-modules/repository/nexus//modules/nexus-repository-go-group"
-  version = "1.0.0"
+  source  = "devops-ia/repository/nexus//modules/nexus-repository-go-group"
   
   name   = "go-group"
   online = true
@@ -1275,8 +1261,7 @@ module "nexus_repository_go_group" {
 
 ```hcl
 module "nexus_repository_go_proxy" {
-  source  = "terraform-nexus-modules/repository/nexus//modules/nexus-repository-go-proxy"
-  version = "1.0.0"
+  source  = "devops-ia/repository/nexus//modules/nexus-repository-go-proxy"
   
   name   = "docker-proxy"
   online = true
@@ -1308,8 +1293,7 @@ module "nexus_repository_go_proxy" {
 
 ```hcl
 module "nexus_repository_helm_hosted" {
-  source  = "terraform-nexus-modules/repository/nexus//modules/nexus-repository-helm-hosted"
-  version = "1.0.0"
+  source  = "devops-ia/repository/nexus//modules/nexus-repository-helm-hosted"
   
   name   = "helm-internal"
   online = true
@@ -1326,8 +1310,7 @@ module "nexus_repository_helm_hosted" {
 
 ```hcl
 module "nexus_repository_helm_proxy" {
-  source  = "terraform-nexus-modules/repository/nexus//modules/nexus-repository-helm-proxy"
-  version = "1.0.0"
+  source  = "devops-ia/repository/nexus//modules/nexus-repository-helm-proxy"
   
   name   = "helm-proxy"
   online = true
@@ -1359,8 +1342,7 @@ module "nexus_repository_helm_proxy" {
 
 ```hcl
 module "nexus_repository_maven_group" {
-  source  = "terraform-nexus-modules/repository/nexus//modules/nexus-repository-maven-group"
-  version = "1.0.0"
+  source  = "devops-ia/repository/nexus//modules/nexus-repository-maven-group"
   
   name   = "maven-group"
   online = true
@@ -1383,8 +1365,7 @@ module "nexus_repository_maven_group" {
 
 ```hcl
 module "nexus_repository_maven_hosted" {
-  source  = "terraform-nexus-modules/repository/nexus//modules/nexus-repository-maven-hosted"
-  version = "1.0.0"
+  source  = "devops-ia/repository/nexus//modules/nexus-repository-maven-hosted"
   
   name   = "maven-releases"
   online = true
@@ -1407,8 +1388,7 @@ module "nexus_repository_maven_hosted" {
 
 ```hcl
 module "nexus_repository_maven_proxy" {
-  source  = "terraform-nexus-modules/repository/nexus//modules/nexus-repository-maven-proxy"
-  version = "1.0.0"
+  source  = "devops-ia/repository/nexus//modules/nexus-repository-maven-proxy"
   
   name   = "maven-central-repo1"
   online = true
@@ -1445,8 +1425,7 @@ module "nexus_repository_maven_proxy" {
 
 ```hcl
 module "nexus_repository_npm_group" {
-  source  = "terraform-nexus-modules/repository/nexus//modules/nexus-repository-npm-group"
-  version = "1.0.0"
+  source  = "devops-ia/repository/nexus//modules/nexus-repository-npm-group"
   
   name   = "npm-group"
   online = true
@@ -1469,8 +1448,7 @@ module "nexus_repository_npm_group" {
 
 ```hcl
 module "nexus_repository_npm_hosted" {
-  source  = "terraform-nexus-modules/repository/nexus//modules/nexus-repository-npm-hosted"
-  version = "1.0.0"
+  source  = "devops-ia/repository/nexus//modules/nexus-repository-npm-hosted"
   
   name   = "npm-hosted"
   online = true
@@ -1491,8 +1469,7 @@ module "nexus_repository_npm_hosted" {
 
 ```hcl
 module "nexus_repository_npm_proxy" {
-  source  = "terraform-nexus-modules/repository/nexus//modules/nexus-repository-npm-proxy"
-  version = "1.0.0"
+  source  = "devops-ia/repository/nexus//modules/nexus-repository-npm-proxy"
   
   name   = "npm-proxy"
   online = true
@@ -1524,8 +1501,7 @@ module "nexus_repository_npm_proxy" {
 
 ```hcl
 module "nexus_repository_nuget_group" {
-  source  = "terraform-nexus-modules/repository/nexus//modules/nexus-repository-uget-group"
-  version = "1.0.0"
+  source  = "devops-ia/repository/nexus//modules/nexus-repository-uget-group"
   
   name   = "nuget-group"
   online = true
@@ -1548,8 +1524,7 @@ module "nexus_repository_nuget_group" {
 
 ```hcl
 module "nexus_repository_nuget_hosted" {
-  source  = "terraform-nexus-modules/repository/nexus//modules/nexus-repository-uget-hosted"
-  version = "1.0.0"
+  source  = "devops-ia/repository/nexus//modules/nexus-repository-uget-hosted"
   
   name   = "nuget-internal"
   online = true
@@ -1566,8 +1541,7 @@ module "nexus_repository_nuget_hosted" {
 
 ```hcl
 module "nexus_repository_nuget_proxy" {
-  source  = "terraform-nexus-modules/repository/nexus//modules/nexus-repository-nuget-proxy"
-  version = "1.0.0"
+  source  = "devops-ia/repository/nexus//modules/nexus-repository-nuget-proxy"
   
   name   = "nuget-proxy"
   online = true
@@ -1602,8 +1576,7 @@ module "nexus_repository_nuget_proxy" {
 
 ```hcl
 module "nexus_repository_p2_proxy" {
-  source  = "terraform-nexus-modules/repository/nexus//modules/nexus-repository-p2-proxy"
-  version = "1.0.0"
+  source  = "devops-ia/repository/nexus//modules/nexus-repository-p2-proxy"
   
   name   = "p2-proxy"
   online = true
@@ -1635,8 +1608,7 @@ module "nexus_repository_p2_proxy" {
 
 ```hcl
 module "nexus_repository_pypi_proxy" {
-  source  = "terraform-nexus-modules/repository/nexus//modules/nexus-repository-pypi-proxy"
-  version = "1.0.0"
+  source  = "devops-ia/repository/nexus//modules/nexus-repository-pypi-proxy"
   
   name   = "pypi-group"
   online = true
@@ -1659,8 +1631,7 @@ module "nexus_repository_pypi_proxy" {
 
 ```hcl
 module "nexus_repository_pypi_hosted" {
-  source  = "terraform-nexus-modules/repository/nexus//modules/nexus-repository-pypi-hosted"
-  version = "1.0.0"
+  source  = "devops-ia/repository/nexus//modules/nexus-repository-pypi-hosted"
   
   name   = "nuget-internal"
   online = true
@@ -1677,8 +1648,7 @@ module "nexus_repository_pypi_hosted" {
 
 ```hcl
 module "nexus_repository_pypi_proxy" {
-  source  = "terraform-nexus-modules/repository/nexus//modules/nexus-repository-pypi-proxy"
-  version = "1.0.0"
+  source  = "devops-ia/repository/nexus//modules/nexus-repository-pypi-proxy"
   
   name   = "pypi-proxy"
   online = true
@@ -1710,8 +1680,7 @@ module "nexus_repository_pypi_proxy" {
 
 ```hcl
 module "nexus_repository_r_group" {
-  source  = "terraform-nexus-modules/repository/nexus//modules/nexus-repository-r-group"
-  version = "1.0.0"
+  source  = "devops-ia/repository/nexus//modules/nexus-repository-r-group"
   
   name   = "r-group"
   online = true
@@ -1734,8 +1703,7 @@ module "nexus_repository_r_group" {
 
 ```hcl
 module "nexus_repository_r_hosted" {
-  source  = "terraform-nexus-modules/repository/nexus//modules/nexus-repository-r-hosted"
-  version = "1.0.0"
+  source  = "devops-ia/repository/nexus//modules/nexus-repository-r-hosted"
   
   name   = "r-hosted"
   online = true
@@ -1752,8 +1720,7 @@ module "nexus_repository_r_hosted" {
 
 ```hcl
 module "nexus_repository_r_proxy" {
-  source  = "terraform-nexus-modules/repository/nexus//modules/nexus-repository-r-proxy"
-  version = "1.0.0"
+  source  = "devops-ia/repository/nexus//modules/nexus-repository-r-proxy"
   
   name   = "r-proxy"
   online = true
@@ -1785,8 +1752,7 @@ module "nexus_repository_r_proxy" {
 
 ```hcl
 module "nexus_repository_raw_hosted" {
-  source  = "terraform-nexus-modules/repository/nexus//modules/nexus-repository-raw-hosted"
-  version = "1.0.0"
+  source  = "devops-ia/repository/nexus//modules/nexus-repository-raw-hosted"
   
   name   = "raw-hosted"
   online = true
@@ -1803,8 +1769,7 @@ module "nexus_repository_raw_hosted" {
 
 ```hcl
 module "nexus_repository_raw_proxy" {
-  source  = "terraform-nexus-modules/repository/nexus//modules/nexus-repository-raw-proxy"
-  version = "1.0.0"
+  source  = "devops-ia/repository/nexus//modules/nexus-repository-raw-proxy"
   
   name   = "raw-proxy"
   online = true
@@ -1836,8 +1801,7 @@ module "nexus_repository_raw_proxy" {
 
 ```hcl
 module "nexus_repository_rubygems_group" {
-  source  = "terraform-nexus-modules/repository/nexus//modules/nexus-repository-rubygems-group"
-  version = "1.0.0"
+  source  = "devops-ia/repository/nexus//modules/nexus-repository-rubygems-group"
   
   name   = "rubygems-group"
   online = true
@@ -1860,8 +1824,7 @@ module "nexus_repository_rubygems_group" {
 
 ```hcl
 module "nexus_repository_rubygems_hosted" {
-  source  = "terraform-nexus-modules/repository/nexus//modules/nexus-repository-rubygems-hosted"
-  version = "1.0.0"
+  source  = "devops-ia/repository/nexus//modules/nexus-repository-rubygems-hosted"
   
   name   = "rubygems-hosted"
   online = true
@@ -1878,8 +1841,7 @@ module "nexus_repository_rubygems_hosted" {
 
 ```hcl
 module "nexus_repository_rubygems_proxy" {
-  source  = "terraform-nexus-modules/repository/nexus//modules/nexus-repository-rubygems-proxy"
-  version = "1.0.0"
+  source  = "devops-ia/repository/nexus//modules/nexus-repository-rubygems-proxy"
   
   name   = "rubygems-proxy"
   online = true
@@ -1911,8 +1873,7 @@ module "nexus_repository_rubygems_proxy" {
 
 ```hcl
 module "nexus_repository_yum_group" {
-  source  = "terraform-nexus-modules/repository/nexus//modules/nexus-repository-yum-group"
-  version = "1.0.0"
+  source  = "devops-ia/repository/nexus//modules/nexus-repository-yum-group"
   
   name   = "yum-group"
   online = true
@@ -1935,8 +1896,7 @@ module "nexus_repository_yum_group" {
 
 ```hcl
 module "nexus_repository_yum_hosted" {
-  source  = "terraform-nexus-modules/repository/nexus//modules/nexus-repository-yum-hosted"
-  version = "1.0.0"
+  source  = "devops-ia/repository/nexus//modules/nexus-repository-yum-hosted"
   
   deploy_policy  = "STRICT"
   name           = "yummy1"
@@ -1959,8 +1919,7 @@ module "nexus_repository_yum_hosted" {
 
 ```hcl
 module "nexus_repository_yum_proxy" {
-  source  = "terraform-nexus-modules/repository/nexus//modules/nexus-repository-yum-proxy"
-  version = "1.0.0"
+  source  = "devops-ia/repository/nexus//modules/nexus-repository-yum-proxy"
   
   name   = "rubygems-proxy"
   online = true
@@ -2145,8 +2104,8 @@ No resources.
 
 ## Authors
 
-Module is maintained by [DevOps IA](https://github.com/devops-ia) with help from [these awesome contributors](https://github.com/terraform-nexus-modules/terraform-nexus-repository/graphs/contributors).
+Module is maintained by [DevOps IA](https://github.com/devops-ia) with help from [these awesome contributors](https://github.com/devops-ia/terraform-nexus-repository/graphs/contributors).
 
 ## License
 
-Apache 2 Licensed. See [LICENSE](https://github.com/terraform-nexus-modules/terraform-nexus-repository/blob/main/LICENSE) for full details.
+Apache 2 Licensed. See [LICENSE](https://github.com/devops-ia/terraform-nexus-repository/blob/main/LICENSE) for full details.
